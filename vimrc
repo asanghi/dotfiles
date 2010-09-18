@@ -9,7 +9,7 @@ set backspace=indent,eol,start
 
 set nobackup
 set nowritebackup
-set history=50		" keep 50 lines of command line history
+set history=256		" keep 256 lines of command line history
 set ruler		" show the cursor position all the time
 set showcmd		" display incomplete commands
 set incsearch		" do incremental searching
@@ -83,6 +83,11 @@ endif " has("autocmd")
 set tabstop=2
 set shiftwidth=2
 set expandtab
+set showmatch
+
+set novisualbell
+set noerrorbells
+set noeb
 
 " Always display the status line
 set laststatus=2
