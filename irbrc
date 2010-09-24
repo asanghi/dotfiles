@@ -6,12 +6,19 @@ IRB.conf[:SAVE_HISTORY] = 1000
 IRB.conf[:HISTORY_FILE] = "#{ENV['HOME']}/.irb_history"
 
 IRB.conf[:PROMPT_MODE] = :SIMPLE
+IRB.conf[:AUTO_INDENT] = true
 
 %w[rubygems looksee/shortcuts wirble].each do |gem|
   begin
     require gem
   rescue LoadError
   end
+end
+
+begin
+  Wirble.init
+  Wirble.colorize
+rescue 
 end
 
 class Object
@@ -51,4 +58,4 @@ def paste
   `pbpaste`
 end
 
-load File.dirname(__FILE__) + '/.railsrc' if $0 == 'irb' && ENV['RAILS_ENV']
+load File.dirname(__FILE__) + '/.railsrc' if $0 == 'script/rails' #  && ENV['RAILS_ENV']

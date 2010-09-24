@@ -2,7 +2,7 @@
 
 begin
   require 'hirb' # sudo gem install cldwalker-hirb --source http://gems.github.com
-  Hirb.enable
+  Hirb::View.enable
 rescue LoadError
 end
 
@@ -17,4 +17,8 @@ end
 
 def hide_log
   change_log(nil)
+end
+
+def show(obj)
+  y(obj.send("column_names"))
 end
