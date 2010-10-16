@@ -5,11 +5,11 @@ export TERM="xterm-color"
 
 export CLICOLOR=1
 
-export grey="\e[1;30m\]"
-export white="\e[37m\]"
-export green="\e[1;32m\]"
-export red="\e[1;31m\]"
-export yellow="\e[1;33m\]"
+export grey="\[\e[1;30m\]"
+export white="\[\e[37m\]"
+export green="\[\e[1;32m\]"
+export red="\[\e[1;31m\]"
+export yellow="\[\e[1;33m\]"
 export reset="\[\e[0m\]"
-export blue="\e[0;36m\]"
+export blue="\[\e[0;36m\]"
 export PS1="$grey[ $blue\u@\H $grey] [ $yellow\w$reset $grey] [ $green\$(~/.rvm/bin/rvm-prompt) $grey]\n[ $red\T$reset $grey] > $white"
