@@ -17,7 +17,8 @@ alias gco='git checkout'
 alias gb='git branch'
 alias gs='git status'
 alias grm="git status | grep deleted | awk '{print \$3}' | xargs git rm"
-alias gg='git grep'
+alias gg='git grep -n'
+alias gcp="git cherry-pick"
 
 # rails
 alias sc='rails c'
