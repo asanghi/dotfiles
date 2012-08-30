@@ -19,6 +19,8 @@ alias gs='git status'
 alias grm="git status | grep deleted | awk '{print \$3}' | xargs git rm"
 alias gg='git grep -n'
 alias gcp="git cherry-pick"
+alias gfo="git fetch origin"
+alias gpom="git push origin master"
 
 # rails
 alias sc='rails c'
