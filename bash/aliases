@@ -15,3 +15,17 @@ function railsapp {
 alias reload='. ~/.bash_profile'
 
 alias mat='subl .'
+
+alias prod="ssh punchh.com"
+alias stag="ssh staging.punchh.com"
+alias demo="ssh demo.punchh.com"
+alias perf="ssh perf.punchh.com"
+alias isl="ssh isl.punchh.com"
+alias mysunday="ssh asanghi@sunday.risingsuntech.net"
+alias salaree="ssh salaree@sunday.risingsuntech.net"
+alias maass="ssh maass@sunday.risingsuntech.net"
+
+alias risemoney="ssh risemoney.com"
+alias accountinous="ssh accountinous"
+
+alias gwc='git whatchanged -p --abbrev-commit --pretty=medium'
