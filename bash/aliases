@@ -16,11 +16,10 @@ alias reload='. ~/.bash_profile'
 
 alias mat='subl .'
 
-alias prod="ssh punchh.com"
+alias prod="ssh aditya@52.6.75.7"
 alias stag="ssh staging.punchh.com"
 alias demo="ssh demo.punchh.com"
-alias perf="ssh perf.punchh.com"
-alias isl="ssh isl.punchh.com"
+alias isl="ssh aditya@54.174.222.129"
 alias mysunday="ssh asanghi@sunday.risingsuntech.net"
 alias salaree="ssh salaree@sunday.risingsuntech.net"
 alias maass="ssh maass@sunday.risingsuntech.net"
