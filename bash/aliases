@@ -16,10 +16,8 @@ alias reload='. ~/.bash_profile'
 
 alias mat='subl .'
 
-alias prod="ssh aditya@52.6.75.7"
-alias stag="ssh staging.punchh.com"
-alias demo="ssh demo.punchh.com"
-alias isl="ssh aditya@54.174.222.129"
+alias prod="ssh adminaccess-adityapunchhcom@172.31.114.3 -i ~/.ssh/punchh"
+alias isl="ssh adityapunchhcom@54.174.222.129"
 alias mysunday="ssh asanghi@sunday.risingsuntech.net"
 alias salaree="ssh salaree@sunday.risingsuntech.net"
 alias maass="ssh maass@sunday.risingsuntech.net"
@@ -28,3 +26,4 @@ alias risemoney="ssh risemoney.com"
 alias accountinous="ssh accountinous"
 
 alias gwc='git whatchanged -p --abbrev-commit --pretty=medium'
+alias grpo='git remote prune origin'
